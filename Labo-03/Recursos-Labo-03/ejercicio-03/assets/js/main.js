@@ -17,7 +17,7 @@ const calculateFactorial = () => {
 const requestNumber = () => {
     let input = prompt("Ingrese un número entero");
     try {
-        if(parseInt(input) <= 0){
+        if(parseInt(input) <= 0 || isNaN(input)){
             throw error;
         }
 
